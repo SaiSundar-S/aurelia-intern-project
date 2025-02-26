@@ -102,4 +102,26 @@ ul {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
+
+.container .text-on-image {
+  left: 70px;
+  padding: 20px;
+  position: relative;
+}
+
+.container .text-on-image img {
+  width: 90%;
+  height: 500px;
+}
+
+.container .text-on-image .text {
+  position: absolute;
+  top: 90%;
+  left: 50%;
+  color: white;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: large;
+}
 /*# sourceMappingURL=style.css.map */
