@@ -19,8 +19,8 @@ ul{
 // }
 .container{
 .navigation{
-    background-color: gray;
-    // position:fixed;
+    background-color:gray;
+        // position:fixed;
     width:100%;
 
     > ul{
@@ -111,6 +111,24 @@ ul{
             }
         }
 
+    }
+}
+.text-on-image{
+    left: 70px;
+    padding:20px;
+    position:relative;
+    img{
+        width:90%;
+        height:500px;
+    }
+    .text{
+        position:absolute;
+        top:90%;
+        left:50%;
+        color: white;
+        transform: translate(-50%,-50%);
+        text-align: center;
+        font-size: large;
     }
 }
 }
