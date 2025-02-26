@@ -2,14 +2,115 @@
     margin:0;
     padding:0;
 }
+
+ul{
+    list-style: none;
+}
+// .container{
+//     display: flex;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100vh;
+//     background-color: #f1f1f1;
+// }
+
+// p{
+//     color: red;
+// }
 .container{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
-    background-color: #f1f1f1;
+.navigation{
+    background-color: gray;
+    // position:fixed;
+    width:100%;
+
+    > ul{
+        display: flex;
+        justify-content: flex-end;
+        gap:20px;
+        padding: 10px;
+/*parent */ li{
+                    padding: 10px;
+                    position: relative;
+                a{
+                    text-decoration: none;
+                    color:white;
+                    text-transform: uppercase;
+                    &:hover{
+                        color:red;
+                    }
+                }
+
+                >ul{
+                    background-color: gray;
+                    position: absolute;
+                    width:100px;
+                    top:40px;
+                    display: none;
+                     li{
+                      position: relative;
+
+                    ul{
+                        position: absolute;
+                        top:0;
+                        left:102px;
+                        display: none;
+                    }
+
+                    }
+                }
+                &:hover{
+                    >ul{
+                        display: block;
+                    }
+                }
+            }
+    }
 }
 
-p{
-    color: red;
+.content{
+  
+    >div{
+       max-width:90%;
+       height: auto;
+    
+       margin: 50px;
+       padding: 40px;
+       border: 2px solid gray;
+        ul{
+            display: flex;
+            gap:10px;
+            flex-wrap:wrap;
+            justify-content: center;
+            align-items: center;
+            margin-top: 20px;
+           
+       
+        
+           
+
+            li{
+            width: 300px;
+            height: 300px;
+            border:1px solid gray;
+            position: relative;
+            
+                >div{
+                
+                       
+                    img{
+                        width: 200px;
+                        height: 200px;
+                        position:absolute;
+                        top:50%;
+                        left:50%;
+
+                        transform: translate((-50%,-50%));
+                    }
+                   
+                }
+            }
+        }
+
+    }
+}
 }
