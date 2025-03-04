@@ -1,0 +1,321 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.container .header {
+  background-color: #7aeeee;
+  padding: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 40px;
+}
+
+.container input {
+  width: 20%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 5px;
+  height: 30px;
+  border: 2px solid #090909;
+  border-radius: 4px;
+  background: transparent;
+  font-size: 15px;
+}
+
+.container button {
+  padding: 10px;
+  background-color: #ff6600;
+  border: 3px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px;
+  color: white;
+  width: 20%;
+}
+
+.container .second-section {
+  margin: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .second-section .text {
+  width: 40%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transform: translate(-20%, 10%);
+          transform: translate(-20%, 10%);
+}
+
+.container .second-section .text h2 {
+  color: orange;
+}
+
+.container .second-section .season {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.container .second-section .season ul li {
+  display: inline-block;
+  text-align: center;
+  border: 2px solid orange;
+  border-radius: 4px;
+  padding: 10px;
+  -webkit-box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.2);
+}
+
+.container .items {
+  margin: 40px;
+}
+
+.container .items ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 15px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 0 40px;
+}
+
+.container .items ul li .product {
+  width: 250px;
+  height: 250px;
+  border-radius: 5px;
+  background-color: rgba(196, 250, 247, 0.847);
+  position: relative;
+  cursor: pointer;
+}
+
+.container .items ul li .product:hover {
+  -webkit-box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.2);
+          box-shadow: 0px 8px 14px 0px rgba(0, 0, 0, 0.2);
+  -webkit-transform: translate(0, -5px);
+          transform: translate(0, -5px);
+}
+
+.container .items ul li .product img {
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+}
+
+.container .items ul li .product .detail {
+  position: absolute;
+  bottom: 10px;
+  left: 45%;
+}
+
+.container .items ul li .product .detail p {
+  font-size: 15px;
+}
+
+.container .show-more {
+  position: absolute;
+  width: 180px;
+  text-align: center;
+  padding: 10px;
+  right: 50%;
+  display: inline-block;
+  border: 2px solid orange;
+  border-radius: 3px;
+  -webkit-transform: translate(50%, -50%);
+          transform: translate(50%, -50%);
+}
+
+.container .show-more:hover {
+  background-color: orange;
+  color: white;
+}
+
+.container .last-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 20px;
+}
+
+.container .last-section .image {
+  padding: 10px 20px;
+  width: 50%;
+}
+
+.container .last-section .image img {
+  width: 600px;
+  height: 350px;
+}
+
+.container .last-section .about {
+  width: 40%;
+  text-align: center;
+}
+
+.container .last-section .about .box {
+  margin-top: 30px;
+  padding: 10px;
+  border-radius: 3px;
+  font-family: 'Courier New', Courier, monospace;
+  letter-spacing: 3px;
+  display: inline;
+  border: 2px solid orange;
+  color: orange;
+}
+
+.container .last-section .about .info {
+  margin-top: 40px;
+}
+
+.container .last-section .about .info p {
+  font-family: serif;
+  text-align: justify;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .last-section .contact {
+  margin-top: 30px;
+  width: 20%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: 50%;
+  vertical-align: bottom;
+  -webkit-transform: translate(0, 90%);
+          transform: translate(0, 90%);
+  border: 2px solid gray;
+  display: inline-block;
+  padding: 10px;
+}
+
+@media only screen and (max-width: 800px) {
+  .container .second-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .container .second-section .text {
+    width: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .container .second-section .season {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .last-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .last-section .image img {
+    width: 300px;
+    height: auto;
+    height: auto;
+  }
+  .container .last-section .about .info {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .container .last-section .about .contact {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1200px) {
+  .container .second-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .container .second-section .text {
+    width: 100%;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .container .second-section .season {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .container .last-section {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container .last-section image img {
+    width: 300px;
+    height: auto;
+  }
+  .container .last-section .about .info {
+    width: 100%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-transform: none;
+            transform: none;
+  }
+  .container .last-section .about .contact {
+    width: 80%;
+    text-align: center;
+  }
+}
+/*# sourceMappingURL=style.css.map */
